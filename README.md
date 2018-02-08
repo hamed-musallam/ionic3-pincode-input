@@ -3,16 +3,20 @@ An Angular 4 (formerly Angular 2) component to enter pin code, built for Ionic 2
 
 Preview
 
-Build Status NPM version Downloads
+![](https://github.com/hamed-musallam/ionic3-pincode-input/blob/master/pincode.gif)
 
-NPM
 
-How to install:
-$ npm install --save ionic3-pincode-input
+#### How to install:
 
-How to use:
-Import Ionic2RatingModule on module definition that declares the page where you want to add the rating component. In some cases, all pages are declared on src/app/app.module.ts.
+    $ npm install --save ionic3-pincode-input
+    
+#### How to use:
 
+
+Import ionicPinCodeInputModule on module definition that declares the page where you want to add the pincode component. In some cases, all pages are declared on src/app/app.module.ts.
+
+
+```actionscript
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -39,8 +43,12 @@ import {ionicPinCodeInputModule} from 'ionic3-pincode-input';
 })
 export class AppModule {}
 
+```
+
 If you are using Lazy Loading in your application, add the ionicPinCodeInputModule to the page module instead of the app module.
 
+
+```actionscript
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ProfilePage } from './profile';
@@ -60,14 +68,19 @@ import {ionicPinCodeInputModule} from 'ionic3-pincode-input';
 })
 
 export class ProfilePageModule { }
-Include the component on page template, like the example below:
+```
 
+
+ Include the component on page template, like the example below:
+
+
+```actionscript
 <pin-code
    color       ="gray"                            <!--default value -->
    isHidden    ="false"                           <!--default value -->
    codeSize    ="4"                               <!--default value -->
    (onComplete)="onPinCodeComplete($event)" >     <!-- this event trigger when user enter the pin code completely, you can get pin code from $event  -->
-  
 </pin-code>
+```
 
 
