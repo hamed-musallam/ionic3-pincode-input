@@ -1,4 +1,4 @@
-ioni3-pincode-input
+## ioni3-pincode-input
 An Angular 4 (formerly Angular 2) component to enter pin code, built for Ionic 2+.
 
 Preview
