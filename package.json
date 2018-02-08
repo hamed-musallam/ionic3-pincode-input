@@ -1,0 +1,43 @@
+{
+  "name": "ionic3-pincode-input",
+  "version": "1.0.4",
+  "description": "custom ionic pin code input for Angular 2+ and Ionic 2+",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": "dist",
+  "scripts": {
+    "ngc": "ngc",
+    "build": "del dist && npm run ngc",
+    "postbuild": "npm run copy:scss",
+    "copy:scss": "copy  src\\components\\ionic3-pincode-input.scss dist\\src\\components\\",
+    "publishPackage": "npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "hamed musallam",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "5.0.3",
+    "@angular/compiler": "5.0.3",
+    "@angular/compiler-cli": "5.0.3",
+    "@angular/core": "5.0.3",
+    "@angular/forms": "5.0.3",
+    "@angular/http": "5.0.3",
+    "@angular/platform-browser": "5.0.3",
+    "@angular/platform-browser-dynamic": "5.0.3",
+    "@ionic-native/core": "4.4.0",
+    "@ionic-native/splash-screen": "4.4.0",
+    "@ionic-native/status-bar": "4.4.0",
+    "@ionic/storage": "2.1.3",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "rxjs": "5.5.2",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.18",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "^3.1.8",
+    "rimraf": "^2.6.2",
+    "typescript": "2.4.2"
+  }
+}

@@ -1,0 +1,35 @@
+
+   :root{
+     --borderColor:gray;
+     --charShape:none;
+   }
+   
+   .col:last-child {
+     width:1% !important;
+   }
+// ionic3-pincode-input {
+        .pinCodeInput {
+          width:100% !important;
+          border:0px;
+          border-bottom: 2px solid var(--borderColor);
+          font-size: 24px;
+          text-align: center;
+          text-security:var(--charShape);
+          -webkit-text-security:var(--charShape);
+          -moz-text-security: var(--charShape);
+        }
+
+
+        .pinCodeGrid{
+              direction: ltr;
+        }
+
+
+   .pinCodeInput[disabled]{
+    border-bottom: 2px solid #e3e3e3;
+    background-color: transparent;
+        }
+
+
+
+// }

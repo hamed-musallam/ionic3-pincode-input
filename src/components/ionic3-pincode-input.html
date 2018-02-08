@@ -1,0 +1,13 @@
+
+<ion-grid class="pinCodeGrid">
+       <form [formGroup]='pinCodeFormGroup'>
+
+  <ion-row>
+
+    <ion-col  *ngFor="let controlItem of this.pinCodeArray;let i = index;let last=last">
+      <input   ng-pattern="/^[0-9]*$/" ng-maxlength="1" maxlength="1" class="pinCodeInput" type="number"  formControlName="{{controlItem}}"   (keyup)="onKeyUp($event,controlItem, i)" (keydown)="onKeyDown($event)"/>
+    </ion-col>
+  </ion-row>
+      </form>
+
+</ion-grid>
