@@ -3,7 +3,10 @@ An Angular 4 (formerly Angular 2) component to enter pin code, built for Ionic 2
 
 Preview
 
+![](https://github.com/hamed-musallam/ionic3-pincode-input/blob/master/pincode2.gif)
+
 ![](https://github.com/hamed-musallam/ionic3-pincode-input/blob/master/pincode.gif)
+
 
 
 #### How to install:
